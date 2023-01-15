@@ -301,8 +301,7 @@ footer p{
 /* ===================================
              Header style  
 ======================================*/
-    header{
-    }
+   
     header .logo{
         width: 80%;
     }
@@ -335,10 +334,11 @@ footer p{
         display: block;
         cursor: pointer;
     }
-    #mobile-menu:hover .menu{
-        background-color: aqua;
+    #mobile-menu:hover #menu{
         visibility: visible;
     }
+
+
 /* ===================================
              Hero style  
 ======================================*/
@@ -346,6 +346,7 @@ footer p{
     padding: 10px;
 }
     .hero-info{
+        margin-top: 50px;
         width: 100%;
     }
     .hero-title{
@@ -356,6 +357,7 @@ footer p{
          Features Section style  
 ======================================*/
     .features{
+        padding-top: 50px;
         flex-direction: column-reverse;
         gap: 30px;
     }
@@ -372,6 +374,7 @@ footer p{
         flex-direction: column;
     }
     .user-navigation .using-info{
+        padding-top: 50px;
         width: 100%;
     }
     .using-info .using-info-title{
@@ -405,11 +408,14 @@ footer p{
 /* ===================================
         Sponspors Section style  
 ======================================*/
+    .sponspors{
+        padding-top: 50px;
+    }
     .sponspors-info .sponspors-text{
         width: 100%;
     }
     .sponspors-logo{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         margin-top: 20px;
     }
     /* ===================================
