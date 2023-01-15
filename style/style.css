@@ -19,6 +19,7 @@ font-family: 'Work Sans', sans-serif; */
     --beige-color: #FFF4E7;
     --orange-color: #FF900E;
     --padding: 50px 220px;
+    --margin: 50px 220px;
     --little-space: 35px;
 }
 *{
@@ -93,7 +94,6 @@ header .logo-title{
     margin-bottom: var(--little-space);
 }
 .hero-subtitel{
-    font-family: var(--primary-font);
     font-weight: 400;
     font-size: 16px;
     color: var(--dark-color2);
@@ -111,7 +111,7 @@ header .logo-title{
     display: flex;
     align-items: center;
     column-gap: 60px;
-    padding: var(--padding)
+    margin: var(--margin);
 
 }
 .features > div{
@@ -140,7 +140,7 @@ header .logo-title{
 .user-navigation{
     display: flex;
     align-items: center;
-    padding: var(--padding);
+    margin: var(--margin);
     column-gap: 60px;
 }
 .user-navigation .using-info{
@@ -189,4 +189,207 @@ header .logo-title{
 /* ===================================
           Facts Section style  
 ======================================*/
+.facts{
+    margin: var(--margin);
+}
+.facts .fats-info{
+    margin: 100px 0;
+    width: 40%;
+}
+.facts-info-title{
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: var(--little-space);
+}
+.facts-text{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+.facts .fects-box-warp{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 100px;
+}
+.fects-box{
+    padding: var(--little-space);
+    text-align: center;
+    border: 1px solid var(--orange-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.fects-box:hover{
+    background-color: #ffd8acaf;
+    transform: rotate(20deg);
+}
+.fects-box img{
+    width: 20%;
+}
+.fects-box .fects-mark{
+    font-size: 45px;
+    font-weight: 600;
+    color: var(--dark-color2)
+}
+.fects-box p{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+}
+/* ===================================
+        Sponspors Section style  
+======================================*/
+.sponspors{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: var(--margin);
+}
+.sponspors-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sponspors-info .sponspors-title{
+    font-size: 45px;
+    margin-bottom: 20px;
+    text-align: center;
 
+}
+.sponspors-info .sponspors-text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    width: 40%;
+}
+.sponspors-logo{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+    margin-top: 100px;
+}
+/* ===================================
+        Footer Section style  
+======================================*/
+footer{
+    padding: 30px;
+    background-color: var(--beige-color);
+    margin: var(--margin);
+}
+footer p{
+    width: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* ===================================
+     Small device responsive  
+======================================*/
+@media screen and (max-width: 576px){
+
+    :root{
+        --little-space: 10px;
+        --padding: 10px 20px;
+        --margin: 10px 20px;
+    }
+/* ===================================
+             Header style  
+======================================*/
+    header{
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    header .logo-title{
+        font-size: 35px;
+    }
+    .menu{
+        display: none;
+    }
+/* ===================================
+             Hero style  
+======================================*/
+.hero{
+    padding: 10px;
+}
+    .hero-info{
+        width: 100%;
+    }
+    .hero-title{
+        font-size: 35px;
+        line-height: 35px;
+    }
+/* ===================================
+         Features Section style  
+======================================*/
+    .features{
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .features > div{
+        width: 100%;
+    }
+    .features-info .features-info-title{
+        font-size: 35px;
+    }
+/* ===================================
+         Features Section style  
+======================================*/
+    .user-navigation{
+        flex-direction: column;
+    }
+    .user-navigation .using-info{
+        width: 100%;
+    }
+    .using-info .using-info-title{
+        font-size: 35px;
+    }
+    .user-navigation .experience{
+        width: 100%;
+    }
+    .experience button{
+        width: 100%;
+        padding: 40px;
+        padding-bottom: 20px;
+        top: 0;
+        left: 0;
+    }
+/* ===================================
+          Facts Section style  
+======================================*/
+    
+    .facts .fats-info{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .facts .fects-box-warp{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+    }
+    .fects-box{
+        padding: 20px 0px;
+    }
+/* ===================================
+        Sponspors Section style  
+======================================*/
+    .sponspors-info .sponspors-text{
+        width: 100%;
+    }
+    .sponspors-logo{
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 20px;
+    }
+    /* ===================================
+        footer Section style  
+======================================*/
+    footer{
+        margin-top: 50px;
+        padding: 15px;
+    }
+    footer p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
