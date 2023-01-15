@@ -1,0 +1,139 @@
+/* ===================================
+    font import from google font  
+======================================*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Work+Sans:ital,wght@0,200;0,400;0,800;0,900;1,900&display=swap');
+
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Work Sans', sans-serif; */
+
+
+/* ===================================
+   Some Common Style for whol website  
+======================================*/
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary-font: 'Work Sans', sans-serif;
+    --dark-color1: #131313;
+    --dark-color2: #424242;
+    --beige-color: #FFF4E7;
+    --orange-color: #FF900E;
+    --padding: 50px 220px;
+    --little-space: 35px;
+}
+button{
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    line-height: 24px;
+    background-color: var(--orange-color);
+    border: var(--orange-color);
+    padding: 20px;
+    border-radius: 8px;
+}
+img{
+    width: 100%;
+}
+
+/* ===================================
+             Header style  
+======================================*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding);
+    background-color: var(--beige-color);
+}
+header .logo-title{
+    color: var(--dark-color1);
+    font-size: 45px;
+    font-weight: 700;
+    font-familY: var(--primary-font)
+}
+.menu ul{
+    display: flex;
+    column-gap: 30px;
+}
+.menu ul li{
+    list-style: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: 18px;
+    font-family: var(--primary-font);
+}
+
+/* ===================================
+         Hero section style  
+======================================*/
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: fit-content;
+    background-color: var(--beige-color);
+    padding: var(--little-space) 0px;
+}
+.hero-info{
+    width: 50%;
+}
+.hero-title{
+    font-family: var(--primary-font);
+    color: var(--dark-color1);
+    font-size: 64px;
+    align-items: center;
+    line-height: 75px;
+    margin-bottom: var(--little-space);
+}
+.hero-subtitel{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--dark-color2);
+    line-height: 26px;
+    align-items: center;
+    margin-bottom: var(--little-space);
+}
+.hero-button{
+    margin-bottom: var(--little-space);
+}
+/* ===================================
+         Features Section style  
+======================================*/
+.features{
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+    padding: var(--padding)
+
+}
+.features > div{
+    width: 50%;
+}
+.features .features-image-model{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.features-info .features-info-title{
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 45px;
+    margin-bottom: var(--little-space);
+}
+.features .features-info-subTitel{
+    font-family: var(--primary-font);
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: var(--little-space);
+}
